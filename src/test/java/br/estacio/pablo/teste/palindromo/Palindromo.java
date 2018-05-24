@@ -5,12 +5,16 @@
  */
 package br.estacio.pablo.teste.palindromo;
 
+import org.junit.Test;
+
 /**
  *
  * @author aluno
  */
 public class Palindromo {
 
+    
+    @Test
    public boolean testePalindromo(String frase) {
         
        String testPalindromo = frase.toUpperCase().replace(" ", "").replace("-", "");
@@ -21,7 +25,6 @@ public class Palindromo {
                 return false;
             }
         }
-
         return true;
     }
          
